@@ -201,10 +201,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &hm LS(NUMBER_1) NUMBER_1  &hm LS(NUMBER_2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5    &hm LS(N6) NUMBER_6  &hm LS(N7) N7   &hm LS(N8) N8   &hm LS(N9) N9  &hm LS(N0) N0    &none
-&none  &none                      &none                      &none                      &none                      &kp PAGE_UP      &kp HOME             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
-&none  &kp LC(Z)                  &kp LC(X)                  &kp LC(C)                  &kp LC(V)                  &kp PAGE_DOWN    &kp END              &none           &none           &none          &none            &trans
-                                                             &none                      &none                      &trans           &trans               &none           &trans
+&none  &hm LS(NUMBER_1) NUMBER_1  &hm LS(NUMBER_2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3          &hm LS(NUMBER_4) NUMBER_4            &hm LS(N5) N5    &hm LS(N6) NUMBER_6  &hm LS(N7) N7   &hm LS(N8) N8   &hm LS(N9) N9  &hm LS(N0) N0    &none
+&none  &kp TAB                    &none                      &hm LS(LEFT_BRACKET) LEFT_BRACKET  &hm LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp PAGE_UP      &kp HOME             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
+&none  &kp LC(Z)                  &kp LC(X)                  &kp LC(C)                          &kp LC(V)                            &kp PAGE_DOWN    &kp END              &none           &none           &none          &none            &trans
+                                                             &trans                             &none                                &trans           &trans               &none           &none
             >;
         };
 
@@ -221,7 +221,7 @@
 &trans  &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
 &trans  &trans    &trans          &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
 &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
-                                  &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &trans
+                                  &none           &trans           &kp SPACE    &kp RET    &trans     &trans
             >;
         };
 
