@@ -184,10 +184,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp V            &kp W           &kp G               &kp M             &kp J    &hm LS(SEMI) SEMI    &hm LS(PERIOD) PERIOD  &hm LS(SINGLE_QUOTE) SINGLE_QUOTE  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
-&none  &hm LEFT_META S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &kp K    &hm LS(COMMA) COMMA  &kp A                  &kp E                              &kp I                &kp C                &none
-&none  &kp F            &kp P           &kp D               &kp L             &kp X    &hm LS(MINUS) MINUS  &kp U                  &kp O                              &kp Y                &kp B                &none
-                                        &mo 1               &kp ENTER         &kp R    &kp SPACE            &kp BACKSPACE          &mo 2
+&none  &kp V            &kp W           &kp G               &kp M             &kp J        &hm LS(SEMI) SEMI    &hm LS(PERIOD) PERIOD  &hm LS(SINGLE_QUOTE) SINGLE_QUOTE  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
+&none  &hm LEFT_META S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &hm ESC K    &hm LS(COMMA) COMMA  &kp A                  &kp E                              &kp I                &kp C                &none
+&none  &kp F            &kp P           &kp D               &kp L             &kp X        &hm LS(MINUS) MINUS  &kp U                  &kp O                              &kp Y                &kp B                &none
+                                        &mo 1               &kp ENTER         &kp R        &kp SPACE            &kp BACKSPACE          &mo 2
             >;
         };
 
@@ -201,10 +201,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6   &kp N7          &kp N8          &kp N9        &kp N0           &trans
-&caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans   &kp N1          &kp N2          &kp N3        &trans           &trans
-                              &kp LGUI      &trans           &kp SPACE        &kp RET  &trans          &trans
+&none  &hm LS(NUMBER_1) NUMBER_1  &hm LS(NUMBER_2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5    &hm LS(N6) NUMBER_6  &hm LS(N7) N7   &hm LS(N8) N8   &hm LS(N9) N9  &hm LS(N0) N0    &none
+&none  &none                      &none                      &none                      &none                      &kp PAGE_UP      &kp HOME             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
+&none  &kp LC(Z)                  &kp LC(X)                  &kp LC(C)                  &kp LC(V)                  &kp PAGE_DOWN    &kp END              &none           &none           &none          &none            &trans
+                                                             &none                      &none                      &trans           &trans               &none           &trans
             >;
         };
 
@@ -246,12 +246,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        l3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
