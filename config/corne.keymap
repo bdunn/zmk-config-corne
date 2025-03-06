@@ -187,7 +187,7 @@
 &caps_word  &kp V            &kp W           &kp G               &kp M             &kp J        &hm LS(SEMI) SEMI    &hm LS(PERIOD) PERIOD  &hm LS(SINGLE_QUOTE) SINGLE_QUOTE  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
 &none       &hm LEFT_META S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &hm ESC K    &hm LS(COMMA) COMMA  &hm RIGHT_SHIFT A      &hm RIGHT_CONTROL E                &hm RIGHT_ALT I      &hm RIGHT_GUI C      &none
 &none       &kp F            &kp P           &kp D               &kp L             &kp X        &hm LS(MINUS) MINUS  &kp U                  &kp O                              &kp Y                &kp B                &none
-                                             &mo 1               &kp ENTER         &kp R        &kp SPACE            &kp BACKSPACE          &mo 2
+                                             &mo 1               &kp ENTER         &kp R        &kp BACKSPACE        &kp SPACE              &mo 2
             >;
         };
 
