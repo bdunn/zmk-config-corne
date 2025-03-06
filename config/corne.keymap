@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "QU";
             #binding-cells = <0>;
-            bindings = <&kp G>, <&kp P>;
+            bindings = <&kp Q>, <&kp P>;
         };
     };
 
@@ -176,7 +176,7 @@
         };
 
         Qu {
-            bindings = <&gresc>;
+            bindings = <&Qu>;
             key-positions = <3 26>;
         };
     };
