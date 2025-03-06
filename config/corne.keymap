@@ -54,6 +54,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        Qu: Qu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QU";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp P>;
+        };
     };
 
     macros {
@@ -166,6 +173,11 @@
         para-great {
             bindings = <&paragreat>;
             key-positions = <20 21>;
+        };
+
+        Qu {
+            bindings = <&gresc>;
+            key-positions = <3 26>;
         };
     };
 
