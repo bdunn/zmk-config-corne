@@ -202,10 +202,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp N1  &kp N2  &kp N3    &kp N4           &kp N5           &kp N6          &kp N7    &kp N8        &kp N9     &kp HOME  &none
-&none  &trans  &trans  &trans    &trans           &kp PAGE_UP      &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp END   &none
-&none  &kp Z   &kp Q   &kp DOWN  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp END         &kp N1    &kp N2        &kp N3     &trans    &none
-                       &kp LGUI  &trans           &kp SPACE        &kp RET         &trans    &trans
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp N6          &kp N7           &kp N8            &kp N9             &kp HOME    &none
+&none  &trans  &trans  &trans  &trans  &kp PAGE_UP      &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW      &kp RIGHT          &kp END     &none
+&none  &kp Z   &kp Q   &none   &none   &kp PAGE_DOWN    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE  &none
+                       &trans  &trans  &kp SPACE        &kp RET         &trans           &trans
             >;
         };
 
