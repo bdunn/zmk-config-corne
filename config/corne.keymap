@@ -185,10 +185,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp V           &kp W           &kp G               &kp M             &kp J           &kp SEMICOLON  &kp PERIOD        &kp SQT      &kp EQUAL       &kp SLASH       &none
-&none  &hm LEFT_GUI S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &hm ESCAPE K    &kp COMMA      &hm LEFT_SHIFT A  &hm LCTRL E  &hm LEFT_ALT I  &hm LEFT_GUI C  &none
-&none  &kp F           &kp P           &kp D               &kp L             &kp X           &kp MINUS      &kp U             &kp O        &kp Y           &kp B           &none
-                                       &mo 1               &kp R             &kp RET         &kp SPACE      &kp BACKSPACE     &mo 2
+&none  &kp V           &kp W           &kp G               &kp M             &kp J           &hm LS(SEMICOLON) SEMICOLON  &hm LS(PERIOD) PERIOD  &hm LS(SQT) SQT  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
+&none  &hm LEFT_GUI S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &hm ESCAPE K    &hm LS(COMMA) COMMA          &hm LEFT_SHIFT A       &hm LCTRL E      &hm LEFT_ALT I       &hm LEFT_GUI C       &none
+&none  &kp F           &kp P           &kp D               &kp L             &kp X           &hm LS(MINUS) MINUS          &kp U                  &kp O            &kp Y                &kp B                &none
+                                       &mo 1               &kp R             &kp RET         &kp SPACE                    &kp BACKSPACE          &mo 2
             >;
         };
 
