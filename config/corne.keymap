@@ -175,7 +175,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        DEF {
+        Layer-0 {
             display-name = "0";
 
             // -----------------------------------------------------------------------------------------
@@ -185,10 +185,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp V           &kp W           &kp G               &kp M             &kp J           &hm LS(SEMICOLON) SEMICOLON  &hm LS(PERIOD) PERIOD  &hm LS(SQT) SQT  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
-&none  &hm LEFT_GUI S  &hm LEFT_ALT N  &hm LEFT_CONTROL T  &hm LEFT_SHIFT H  &hm ESCAPE K    &hm LS(COMMA) COMMA          &hm LEFT_SHIFT A       &hm LCTRL E      &hm LEFT_ALT I       &hm LEFT_GUI C       &none
-&none  &kp F           &kp P           &kp D               &kp L             &kp X           &hm LS(MINUS) MINUS          &kp U                  &kp O            &kp Y                &kp B                &none
-                                       &mo 1               &kp R             &kp RET         &kp SPACE                    &kp BACKSPACE          &mo 2
+&none  &kp Q  &kp W  &kp E  &kp R  &kp J        &hm LS(SEMICOLON) SEMICOLON  &hm LS(PERIOD) PERIOD  &hm LS(SQT) SQT  &hm LS(EQUAL) EQUAL  &hm LS(SLASH) SLASH  &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G        &hm LS(COMMA) COMMA          &hm LEFT_SHIFT A       &hm LCTRL E      &hm LEFT_ALT I       &hm LEFT_GUI C       &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B        &hm LS(MINUS) MINUS          &kp U                  &kp O            &kp Y                &kp B                &none
+                     &mo 1  &mo 1  &kp SPACE    &kp SPACE                    &kp BACKSPACE          &mo 2
             >;
         };
 
